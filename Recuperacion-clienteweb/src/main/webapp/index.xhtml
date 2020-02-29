@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+	<h:head>
+		<title>Supletorio Distribuida</title>
+	</h:head>
+	<h:body>
+	
+	<h1>Todos</h1>
+	
+		<h:form>
+			<h:dataTable value="#{beanTodos.lista}" var="todos">
+				<h:column>
+					<f:facet name="header">Id</f:facet>
+					<h:outputLabel value="#{todos.id}"/>
+				</h:column>
+				<h:column>
+					<f:facet name="header">Name</f:facet>
+					<h:outputLabel value="#{todos.name}"/>
+				</h:column>
+				<h:column>
+					<f:facet name="header">userName</f:facet>
+					<h:outputLabel value="#{todos.userName}"/>
+				</h:column>
+				<h:column>
+					<f:facet name="header">phone</f:facet>
+					<h:outputLabel value="#{todos.phone}"/>
+				</h:column>
+				<h:column>
+					<f:facet name="header">website</f:facet>
+					<h:outputLabel value="#{todos.website}"/>
+				</h:column>
+				<h:column>
+					<f:facet name="header">Company-name</f:facet>
+					<h:outputLabel value="#{todos.companyId.name}"/>
+				</h:column>
+				<h:column>
+					<f:facet name="header">Company-catchPhrase</f:facet>
+					<h:outputLabel value="#{todos.companyId.catchPhrase}"/>
+				</h:column>
+				<h:column>
+					<f:facet name="header">Company-bs</f:facet>
+					<h:outputLabel value="#{todos.companyId.bs}"/>
+				</h:column>
+				<h:column>
+					<f:facet name="header">Addres-street</f:facet>
+					<h:outputLabel value="#{todos.addressId.street}"/>
+				</h:column>
+				<h:column>
+					<f:facet name="header">Addres-suite</f:facet>
+					<h:outputLabel value="#{todos.addressId.suite}"/>
+				</h:column>
+				<h:column>
+					<f:facet name="header">Addres-city</f:facet>
+					<h:outputLabel value="#{todos.addressId.city}"/>
+				</h:column>
+				<h:column>
+					<f:facet name="header">Addres-zipcode</f:facet>
+					<h:outputLabel value="#{todos.addressId.zipcode}"/>
+				</h:column>
+				<h:column>
+					<f:facet name="header">Addres-Geo-lat</f:facet>
+					<h:outputLabel value="#{todos.addressId.geoId.lat}"/>
+				</h:column>
+				<h:column>
+					<f:facet name="header">Addres-Geo-lng</f:facet>
+					<h:outputLabel value="#{todos.addressId.geoId.lng}"/>
+				</h:column>
+				<h:column>  
+<f:facet name="header">Actualizar</f:facet>  
+<h:commandButton action = "#{beanTodos.edit(todos.id)}" value="Buscar" class="btn btn-danger">  
+</h:commandButton>  
+</h:column> 
+			</h:dataTable>
+		</h:form>
+		
+		<h1>Users</h1>	
+	<h:form>
+			<h:dataTable value="#{beanUsers.lista}" var="users">
+				<h:column>
+					<f:facet name="header">Id</f:facet>
+					<h:outputLabel value="#{users.id}"/>
+				</h:column>
+				<h:column>
+					<f:facet name="header">userId</f:facet>
+					<h:outputLabel value="#{users.userId}"/>
+				</h:column>
+				<h:column>
+					<f:facet name="header">Title</f:facet>
+					<h:outputLabel value="#{users.title}"/>
+				</h:column>
+				<h:column>
+					<f:facet name="header">Completed</f:facet>
+					<h:outputLabel value="#{users.completed}"/>
+				</h:column>
+				
+				<h:column>  
+<f:facet name="header">Actualizar</f:facet>  
+<h:commandButton action = "#{beanUsers.edit(users.id)}" value="Buscar" class="btn btn-danger">  
+</h:commandButton>  
+</h:column> 
+			</h:dataTable>
+		</h:form>
+		
+	</h:body>
+</html>

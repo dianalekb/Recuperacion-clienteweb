@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+	<h:head>
+		<title>Supletorio Distribuida</title>
+	</h:head>
+	<h:body>
+	
+	<h1>Buscar</h1>
+	<h:form>
+		<table>
+			<tr>
+				<td><label>Id</label></td>
+				<td><h:inputText id="id" value="#{beanUsers.users.id}"></h:inputText>
+				</td>
+			</tr>
+			<tr>
+				<td><label>userId</label></td>
+				<td><h:inputText id="nombre" value="#{beanUsers.users.userId}"></h:inputText>
+				</td>
+			</tr>
+			<tr>
+				<td><label>Title</label></td>
+				<td><h:inputText id="userName" value="#{beanUsers.users.title}"></h:inputText>
+				</td>
+			</tr>
+			<tr>
+				<td><label>Completed</label></td>
+				<td><h:inputText id="phone" value="#{beanUsers.users.completed}"></h:inputText>
+				</td>
+			</tr>
+			
+               
+		</table>
+
+	
+		</h:form>
+	</h:body>
+</html>

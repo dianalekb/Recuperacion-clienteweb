@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+	<h:head>
+		<title>Supletorio Distribuida</title>
+	</h:head>
+	<h:body>
+	
+	<h1>Buscar</h1>
+	<h:form>
+		<table>
+			<tr>
+				<td><label>Id</label></td>
+				<td><h:inputText id="id" value="#{beanTodos.todos.id}"></h:inputText>
+				</td>
+			</tr>
+			<tr>
+				<td><label>Name</label></td>
+				<td><h:inputText id="nombre" value="#{beanTodos.todos.name}"></h:inputText>
+				</td>
+			</tr>
+			<tr>
+				<td><label>userName</label></td>
+				<td><h:inputText id="userName" value="#{beanTodos.todos.userName}"></h:inputText>
+				</td>
+			</tr>
+			<tr>
+				<td><label>Phone</label></td>
+				<td><h:inputText id="phone" value="#{beanTodos.todos.phone}"></h:inputText>
+				</td>
+			</tr>
+			<tr>
+				<td><label>website</label></td>
+				<td><h:inputText id="website" value="#{beanTodos.todos.website}"></h:inputText>
+				</td>
+			</tr>
+			<tr>
+				<td><label>Company-name</label></td>
+				<td><h:inputText id="name" value="#{beanTodos.todos.companyId.name}"></h:inputText>
+				</td>
+			</tr>
+			<tr>
+				<td><label>Company-catchPhrase</label></td>
+				<td><h:inputText id="catchPhrase" value="#{beanTodos.todos.companyId.catchPhrase}"></h:inputText>
+				</td>
+			</tr>
+			<tr>
+				<td><label>Company-bs</label></td>
+				<td><h:inputText id="bs" value="#{beanTodos.todos.companyId.bs}"></h:inputText>
+				</td>
+			</tr>
+			<tr>
+				<td><label>Addres-street</label></td>
+				<td><h:inputText id="street" value="#{beanTodos.todos.addressId.street}"></h:inputText>
+				</td>
+			</tr>
+			<tr>
+				<td><label>Addres-suite</label></td>
+				<td><h:inputText id="suite" value="#{beanTodos.todos.addressId.suite}"></h:inputText>
+				</td>
+			</tr>
+			<tr>
+				<td><label>Addres-city</label></td>
+				<td><h:inputText id="city" value="#{beanTodos.todos.addressId.city}"></h:inputText>
+				</td>
+			</tr>
+			<tr>
+				<td><label>Addres-zipcode</label></td>
+				<td><h:inputText id="zipcode" value="#{beanTodos.todos.addressId.zipcode}"></h:inputText>
+				</td>
+			</tr>
+			<tr>
+				<td><label>Addres-Geo-lat</label></td>
+				<td><h:inputText id="lat" value="#{beanTodos.todos.addressId.geoId.lat}"></h:inputText>
+				</td>
+			</tr>
+			<tr>
+				<td><label>Addres-Geo-lng</label></td>
+				<td><h:inputText id="lng" value="#{beanTodos.todos.addressId.geoId.lng}"></h:inputText>
+				</td>
+			</tr>
+               
+		</table>
+
+	
+		</h:form>
+	</h:body>
+</html>
